@@ -1,0 +1,2198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MapStory 7</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta content='text/html;charset=utf-8' http-equiv='content-type'>
+    <meta content='Flat administration template for Twitter Bootstrap. Twitter Bootstrap 3 template with Ruby on Rails support.' name='description'>
+    <link href='assets/images/meta_icons/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <link href='assets/images/meta_icons/apple-touch-icon.png' rel='apple-touch-icon-precomposed'>
+    <link href='assets/images/meta_icons/apple-touch-icon-57x57.png' rel='apple-touch-icon-precomposed' sizes='57x57'>
+    <link href='assets/images/meta_icons/apple-touch-icon-72x72.png' rel='apple-touch-icon-precomposed' sizes='72x72'>
+    <link href='assets/images/meta_icons/apple-touch-icon-114x114.png' rel='apple-touch-icon-precomposed' sizes='114x114'>
+    <link href='assets/images/meta_icons/apple-touch-icon-144x144.png' rel='apple-touch-icon-precomposed' sizes='144x144'>
+    <!-- / START - page related stylesheets [optional] -->
+    
+    <!-- / END - page related stylesheets [optional] -->
+    <!-- / bootstrap [required] -->
+    <link href="assets/stylesheets/bootstrap/bootstrap.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- / theme file [required] -->
+    <link href="assets/stylesheets/light-theme.css" media="all" id="color-settings-body-color" rel="stylesheet" type="text/css" />
+    <!-- / coloring file [optional] (if you are going to use custom contrast color) -->
+    <link href="assets/stylesheets/theme-colors.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- / demo file [not required!] -->
+    <link href="assets/stylesheets/demo.css" media="all" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+      <script src="assets/javascripts/ie/html5shiv.js" type="text/javascript"></script>
+      <script src="assets/javascripts/ie/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body class='contrast-orange without-footer'>
+    <header>
+      <nav class='navbar navbar-default' style="margin-bottom:0">
+        <a class='navbar-brand' href='index.html'>
+          <img width="81" height="21" class="logo" alt="Flatty" src="assets/images/logo.svg" />
+          <img width="21" height="21" class="logo-xs" alt="Flatty" src="assets/images/logo_xs.svg" />
+        </a>
+        <a class='toggle-nav btn pull-left' href='#'>
+          <i class='icon-reorder'></i>
+        </a>
+        <ul class='nav'>
+          <li class='dropdown only-icon'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-cog'></i>
+            </a>
+            <ul class='dropdown-menu color-settings'>
+              <li class='color-settings-body-color'>
+                <div class='color-title'>Body color</div>
+                <a data-change-to='assets/stylesheets/light-theme.css' href='#'>
+                  Light
+                  <small>(default)</small>
+                </a>
+                <a data-change-to='assets/stylesheets/dark-theme.css' href='#'>
+                  Dark
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li class='color-settings-contrast-color'>
+                <div class='color-title'>Contrast color</div>
+                            <a data-change-to="contrast-red" href="#"><i class='icon-cog text-red'></i>
+                Red
+                </a>
+    
+                            <a data-change-to="contrast-blue" href="#"><i class='icon-cog text-blue'></i>
+                Blue
+                </a>
+    
+                            <a data-change-to="contrast-orange" href="#"><i class='icon-cog text-orange'></i>
+                Orange 
+                <small>(default)</small>
+                </a>
+    
+                            <a data-change-to="contrast-purple" href="#"><i class='icon-cog text-purple'></i>
+                Purple
+                </a>
+    
+                            <a data-change-to="contrast-green" href="#"><i class='icon-cog text-green'></i>
+                Green
+                </a>
+    
+                            <a data-change-to="contrast-muted" href="#"><i class='icon-cog text-muted'></i>
+                Muted
+                </a>
+    
+                            <a data-change-to="contrast-fb" href="#"><i class='icon-cog text-fb'></i>
+                Facebook
+                </a>
+    
+                            <a data-change-to="contrast-dark" href="#"><i class='icon-cog text-dark'></i>
+                Dark
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class='dropdown only-icon widget'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-rss'></i>
+              <div class='label'>5</div>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      John Doe signed up
+                      <small class='text-muted'>just now</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-inbox text-error'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      New Order #002
+                      <small class='text-muted'>3 minutes ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-comment text-warning'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      America Leannon commented Flatty with veeery long text.
+                      <small class='text-muted'>1 hour ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-user text-success'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      Jane Doe signed up
+                      <small class='text-muted'>last week</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='#'>
+                  <div class='widget-body'>
+                    <div class='pull-left icon'>
+                      <i class='icon-inbox text-error'></i>
+                    </div>
+                    <div class='pull-left text'>
+                      New Order #001
+                      <small class='text-muted'>1 year ago</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class='widget-footer'>
+                <a href='#'>All notifications</a>
+              </li>
+            </ul>
+          </li>
+          <li class='dropdown light user-menu'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <img width="23" height="23" alt="Mila Kunis" src="assets/images/avatar.jpg" />
+              <span class='user-name'>@mapstoryteller</span>
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-user'></i>
+                  Profile
+                </a>
+              </li>
+              <li>
+                <a href='user_profile.html'>
+                  <i class='icon-cog'></i>
+                  Settings
+                </a>
+              </li>
+              <li class='divider'></li>
+              <li>
+                <a href='sign_in.html'>
+                  <i class='icon-signout'></i>
+                  Sign out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form action='search_results.html' class='navbar-form navbar-right hidden-xs' method='get'>
+          <button class='btn btn-link icon-search' name='button' type='submit'></button>
+          <div class='form-group'>
+            <input value="" class="form-control" placeholder="Search MapStory" autocomplete="off" id="q_header" name="q" type="text" />
+          </div>
+        </form>
+      </nav>
+    </header>
+	
+	<div class="tabbable">
+        <ul class="nav nav-tabs nav-tabs-simple" style="margin-bottom:2px">
+			<li class="active">
+				<a class="green-border" data-toggle="tab" href="#StoryLayersTab">
+					StoryLayers
+                </a>
+            </li>
+            <li>
+                <a class="red-border" data-toggle="tab" href="#StoryBoardTab">
+					StoryBoard
+                </a>
+            </li>
+			<li>
+                <a class="blue-border" data-toggle="tab" href="#StoryPinsTab">
+					StoryPins
+                </a>
+            </li>
+		</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" id="StoryLayersTab">
+			<div class="panel-group col-md-2 sortable ui-sortable" id="LayersAccordion" style="background-color:#dddddd;padding-left:2px;padding-top:2px;padding-right:2px">
+									<div class="panel panel-default">
+										<!--Point Layer-->
+										<div class="panel-heading" style="background-color:#dddddd">
+											<h4 class="panel-title" style="color: #006b24">
+												<a class="accordion-toggle" data-toggle="collapse" data-parent="#LayersAccordion" href="#PointLayer"> StoryLayer 1 <span
+													class="label label-success pull-right">PT</span></a>
+											</h4>
+										</div>
+										<!-- Points Layer -->
+										<div id="PointLayer" class="panel-collapse collapse">
+											<div class="panel-body">
+												<div class="row">
+												
+													<ul class="nav nav-pills">
+															<li class="active"><a href="#PTFeatures" data-toggle="tab"><i class="glyphicon glyphicon-globe"></i></a></li>
+															<li><a href="#PTStyles" data-toggle="tab"><i class="glyphicon glyphicon-picture"></i></a></li>
+															<li><a href="#PTDatabase" data-toggle="tab"><i class="glyphicon glyphicon-list-alt"></i></a></li>
+															<li><a href="#PTInfobox" data-toggle="tab"><i class="glyphicon glyphicon-comment"></i></a></li>
+															<li><a href="#PTMetadata" data-toggle="tab"><i class="glyphicon glyphicon-tag"></i></a></li>
+														</ul>
+													<div class="tab-content">
+														<div class="tab-pane active" id="PTFeatures">
+															<!--Point Features-->
+															<form>
+																<!--Edit Mode Buttons-->
+																<div class="col-md-12">
+																<button type="button" data-toggle="tooltip" title="Toggle Edit Mode ON" class="btn btn-primary btn-block">
+																	<i class="glyphicon glyphicon-play"></i> Edit Mode ON
+																</button>
+																</div>
+																<hr>
+																<div class="btn-group btn-block" data-toggle="buttons">
+																	<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success col-md-3">
+																		<input type="radio" name="options" id="option1"> 
+																		<i class="glyphicon glyphicon-plus"></i> Add
+																	</button>
+  
+																	<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info col-md-3">
+																		<input type="radio" name="options" id="option2"> 
+																		<i class="glyphicon glyphicon-edit"></i> Mod
+																	</button>
+																	<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-remove"></i> Del
+																	</button>
+																	<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-tags"></i> Info
+																	</button>
+																</div>
+																<br>
+																<hr>
+																<table class="table table-bordered table-condensed table-hover" style="background-color: white">
+																	<caption style="text-align: left">
+																		<strong>Attributes</strong>
+																		<button data-toggle="tooltip" title="Cancel point" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-remove-sign"></i>
+																		</button>
+																		<button data-toggle="tooltip" title="Save point" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-circle-arrow-down"></i>
+																		</button>
+																		<button data-toggle="tooltip" title="Adjust geographic coordinates" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-screenshot"></i>
+																		</button>
+																		<br> <br>
+																	</caption>
+																	<thead>
+																		<tr>
+																			<th>Field</th>
+																			<th>Details</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>FID</td>
+																			<td>12345</td>
+																		</tr>
+																		<tr>
+																			<td>Attrib 1</td>
+																			<td></td>
+																		</tr>
+																		<tr>
+																			<td>Attrib 2</td>
+																			<td></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</form>
+														</div>
+														<div class="tab-pane" id="PTStyles">
+															<!--Point Styles -->
+															<form>
+																<div id="myCarouselPT" class="carousel slide">
+																	<ol class="carousel-indicators">
+																		<li data-target="#myCarouselPT" data-slide-to="0" class="active"></li>
+																		<li data-target="#myCarouselPT" data-slide-to="1"></li>
+																		<li data-target="#myCarouselPT" data-slide-to="2"></li>
+																		<li data-target="#myCarouselPT" data-slide-to="3"></li>
+																	</ol>
+																	<div class="carousel-inner">
+																		<div class="active item">
+																			<img src="png/PT-simple.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/PT-unique.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/PT-graduated.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/PT-density.png">
+																		</div>
+																	</div>
+																	<a class="carousel-control left" href="#myCarouselPT" data-slide="prev"><span class="glyphicon glyphicon-chevron-prev"></span></a> <a
+																		class="carousel-control right" href="#myCarouselPT" data-slide="next"><span class="glyphicon glyphicon-chevron-next"></span></a>
+																</div>
+																<br> <label for="inputSymbol">Symbol</label> <br>
+																<div id="inputSymbol" class="btn-group">
+																	<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"> Select symbol <span class="caret"></span></a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">circle</a></li>
+																		<li><a href="#">square</a></li>
+																		<li><a href="#">triangle</a></li>
+																	</ul>
+																</div>
+																<br> <br>
+																<!--Add column data type-->
+																<label for="inputSymbolSize">Size</label> <input id="inputSymbolSize" class="form-control" type="number" value="0"> <br>
+																<button class="btn btn-danger btn-block">
+																	<i class="glyphicon glyphicon-edit"></i> Edit SLD
+																</button>
+															</form>
+														</div>
+														<div class="tab-pane" id="PTDatabase">
+															<!--Point Database-->
+															<form>
+																<!--Edit Mode Buttons-->
+																<div class="col-md-12">
+																<button type="button" data-toggle="tooltip" title="Toggle Edit Mode ON" class="btn btn-primary btn-block">
+																	<i class="glyphicon glyphicon-play"></i> Edit Mode ON
+																</button>
+																</div>
+																<hr>
+																<div class="btn-group btn-block" data-toggle="buttons">
+																	<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success col-md-3">
+																		<input type="radio" name="options" id="option1"> 
+																		<i class="glyphicon glyphicon-plus"></i> Row
+																	</button>
+  
+																	<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info col-md-3">
+																		<input type="radio" name="options" id="option2"> 
+																		<i class="glyphicon glyphicon-plus"></i> Col
+																	</button>
+																	<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-remove"></i> Del
+																	</button>
+																	<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-tags"></i> Info 
+																	</button>
+																</div>
+															</form>
+														</div>
+														<div class="tab-pane" id="PTInfobox">
+															<!--Point Infobox-->
+															<form>
+																<label>Select columns</label> <label class="checkbox"> <input type="checkbox" value=""> Column 1
+																</label> <label class="checkbox"> <input type="checkbox" value=""> Column 2
+																</label> <label class="checkbox"> <input type="checkbox" value=""> Column 3
+																</label>
+															</form>
+														</div>
+														<div class="tab-pane" id="PTMetadata">
+															<!--Point Metadata-->
+															<form>
+																<label for="inputLayerTitle">StoryLayer Title</label> <input type="text" class="form-control" id="inputLayerTitle" placeholder="Title">
+																<br> <label for="inputCategory">Category</label> <br>
+																<div id="inputCategory" class="btn-group">
+																	<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"> Select category <span class="caret"></span></a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">Category 1</a></li>
+																		<li><a href="#">Category 2 </a></li>
+																		<li><a href="#">Category 3</a></li>
+																	</ul>
+																</div>
+																<br> <br> <label for="inputAbstract">Abstract</label>
+																<textarea id="inputAbstract" class="form-control" rows="5" placeholder="Summary"></textarea>
+																<br>
+																<!--parse button-->
+																<button class="btn btn-danger btn-block">
+																	<i class="glyphicon glyphicon-download"></i> Save metadata
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Line Layer-->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title" style="color: #2929a3">
+												<a class="accordion-toggle" data-toggle="collapse" data-parent="#LayersAccordion" href="#LineLayer"> StoryLayer 2 <span
+													class="label label-info pull-right">LN</span></a>
+											</h4>
+										</div>
+										<div id="LineLayer" class="panel-collapse collapse">
+											<div class="panel-body">
+												<div class="row">
+													<div class="col-md-4">
+														<ul class="nav nav-pills nav-stacked">
+															<li class="active"><a href="#LNFeatures" data-toggle="tab"><i class="glyphicon glyphicon-globe"></i> Features</a></li>
+															<li><a href="#LNStyles" data-toggle="tab"><i class="glyphicon glyphicon-picture"></i> Styles</a></li>
+															<li><a href="#LNDatabase" data-toggle="tab"><i class="glyphicon glyphicon-list-alt"></i> Database</a></li>
+															<li><a href="#LNInfobox" data-toggle="tab"><i class="glyphicon glyphicon-comment"></i> Infobox</a></li>
+															<li><a href="#LNMetadata" data-toggle="tab"><i class="glyphicon glyphicon-tag"></i> Metadata</a></li>
+														</ul>
+													</div>
+													<div class="tab-content col-md-8">
+														<div class="tab-pane active" id="LNFeatures">
+															<!--Line Features-->
+															<form>
+																<!--Edit Mode Buttons-->
+																<div class="col-md-12">
+																<button type="button" data-toggle="tooltip" title="Toggle Edit Mode ON" class="btn btn-primary btn-block">
+																	<i class="glyphicon glyphicon-play"></i> Edit Mode ON
+																</button>
+																</div>
+																<hr>
+																<div class="btn-group btn-block" data-toggle="buttons">
+																	<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success col-md-3">
+																		<input type="radio" name="options" id="option1"> 
+																		<i class="glyphicon glyphicon-plus"></i> Add
+																	</button>
+  
+																	<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info col-md-3">
+																		<input type="radio" name="options" id="option2"> 
+																		<i class="glyphicon glyphicon-edit"></i> Mod
+																	</button>
+																	<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-remove"></i> Del
+																	</button>
+																	<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-tags"></i> Info
+																	</button>
+																</div>
+																<br>
+																<hr>
+																<table class="table table-bordered table-condensed table-hover" style="background-color: white">
+																	<caption style="text-align: left">
+																		<strong>Attributes</strong>
+																		<button data-toggle="tooltip" title="Cancel point" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-remove-sign"></i>
+																		</button>
+																		<button data-toggle="tooltip" title="Save point" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-circle-arrow-down"></i>
+																		</button>
+																		<button data-toggle="tooltip" title="Adjust geographic coordinates" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-screenshot"></i>
+																		</button>
+																		<br> <br>
+																	</caption>
+																	<thead>
+																		<tr>
+																			<th>Field</th>
+																			<th>Details</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>FID</td>
+																			<td>12345</td>
+																		</tr>
+																		<tr>
+																			<td>Attrib 1</td>
+																			<td></td>
+																		</tr>
+																		<tr>
+																			<td>Attrib 2</td>
+																			<td></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</form>
+														</div>
+														<div class="tab-pane" id="LNStyles">
+															<!--Line Styles -->
+															<form>
+																<div id="myCarouselLN" class="carousel slide">
+																	<ol class="carousel-indicators">
+																		<li data-target="#myCarouselLN" data-slide-to="0" class="active"></li>
+																		<li data-target="#myCarouselLN" data-slide-to="1"></li>
+																		<li data-target="#myCarouselLN" data-slide-to="2"></li>
+																	</ol>
+																	<div class="carousel-inner">
+																		<div class="active item">
+																			<img src="png/LN-simple.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/LN-unique.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/LN-choropleth.png">
+																		</div>
+																	</div>
+																	<a class="carousel-control left" href="#myCarouselLN" data-slide="prev"><span class="glyphicon glyphicon-chevron-prev"></span></a> <a
+																		class="carousel-control right" href="#myCarouselLN" data-slide="next"><span class="glyphicon glyphicon-chevron-next"></span></a>
+																</div>
+																<br> <label for="inputSymbol">Symbol</label> <br>
+																<div id="inputSymbol" class="btn-group">
+																	<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"> Select symbol <span class="caret"></span></a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">circle</a></li>
+																		<li><a href="#">square</a></li>
+																		<li><a href="#">triangle</a></li>
+																	</ul>
+																</div>
+																<br> <br>
+																<!--Add column data type-->
+																<label for="inputSymbolSize">Size</label> <input id="inputSymbolSize" class="form-control" type="number" value="0"> <br>
+																<!--edit sld-->
+																<button class="btn btn-danger btn-block">
+																	<i class="glyphicon glyphicon-edit"></i> Edit SLD
+																</button>
+															</form>
+														</div>
+														<div class="tab-pane" id="LNDatabase">
+															<!--Line Database-->
+															<form>
+																<!--Edit Mode Buttons-->
+																<div class="col-md-12">
+																<button type="button" data-toggle="tooltip" title="Toggle Edit Mode ON" class="btn btn-primary btn-block">
+																	<i class="glyphicon glyphicon-play"></i> Edit Mode ON
+																</button>
+																</div>
+																<hr>
+																<div class="btn-group btn-block" data-toggle="buttons">
+																	<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success col-md-3">
+																		<input type="radio" name="options" id="option1"> 
+																		<i class="glyphicon glyphicon-plus"></i> Add
+																	</button>
+  
+																	<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info col-md-3">
+																		<input type="radio" name="options" id="option2"> 
+																		<i class="glyphicon glyphicon-edit"></i> Mod
+																	</button>
+																	<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-remove"></i> Del
+																	</button>
+																	<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-tags"></i> Info
+																	</button>
+																</div>
+															</form>
+														</div>
+														<div class="tab-pane" id="LNInfobox">
+															<!--Line Infobox-->
+															<form>
+																<label>Select columns</label> <label class="checkbox"> <input type="checkbox" value=""> Column 1
+																</label> <label class="checkbox"> <input type="checkbox" value=""> Column 2
+																</label> <label class="checkbox"> <input type="checkbox" value=""> Column 3
+																</label>
+															</form>
+														</div>
+														<div class="tab-pane" id="LNMetadata">
+															<!--Line Metadata-->
+															<form>
+																<label for="inputLayerTitle">StoryLayer Title</label> <input class="form-control" type="text" id="inputLayerTitle" placeholder="Title">
+																<br> <label for="inputCategory">Category</label> <br>
+																<div id="inputCategory" class="btn-group">
+																	<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"> Select category <span class="caret"></span></a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">Category 1</a></li>
+																		<li><a href="#">Category 2 </a></li>
+																		<li><a href="#">Category 3</a></li>
+																	</ul>
+																</div>
+																<br> <br> <label for="inputAbstract">Abstract</label>
+																<textarea class="form-control" id="inputAbstract" rows="5" placeholder="Summary"></textarea>
+																<br>
+																<!--parse button-->
+																<button class="btn btn-danger btn-block">
+																	<i class="glyphicon glyphicon-download"></i> Save metadata
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Polygon Layer-->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title" style="color: #a30000">
+												<a class="accordion-toggle" data-toggle="collapse" data-parent="#LayersAccordion" href="#PolygonLayer"> StoryLayer 3 <span
+													class="label label-danger pull-right">PG</span>
+												</a>
+											</h4>
+										</div>
+										<div id="PolygonLayer" class="panel-collapse collapse">
+											<div class="panel-body">
+												<div class="row">
+													<div class="col-md-4">
+														<ul class="nav nav-pills nav-stacked">
+															<li class="active"><a href="#PGFeatures" data-toggle="tab"><i class="glyphicon glyphicon-globe"></i> Features</a></li>
+															<li><a href="#PGStyles" data-toggle="tab"><i class="glyphicon glyphicon-picture"></i> Styles</a></li>
+															<li><a href="#PGDatabase" data-toggle="tab"><i class="glyphicon glyphicon-list-alt"></i> Database</a></li>
+															<li><a href="#PGInfobox" data-toggle="tab"><i class="glyphicon glyphicon-comment"></i> Infobox</a></li>
+															<li><a href="#PGMetadata" data-toggle="tab"><i class="glyphicon glyphicon-tag"></i> Metadata</a></li>
+														</ul>
+													</div>
+													<div class="tab-content col-md-8">
+														<div class="tab-pane active" id="PGFeatures">
+															<!--Polygon Features-->
+															<form>
+																<!--Edit Mode Buttons-->
+																<div class="col-md-12">
+																<button type="button" data-toggle="tooltip" title="Toggle Edit Mode ON" class="btn btn-primary btn-block">
+																	<i class="glyphicon glyphicon-play"></i> Edit Mode ON
+																</button>
+																</div>
+																<hr>
+																<div class="btn-group btn-block" data-toggle="buttons">
+																	<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success col-md-3">
+																		<input type="radio" name="options" id="option1"> 
+																		<i class="glyphicon glyphicon-plus"></i> Add
+																	</button>
+  
+																	<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info col-md-3">
+																		<input type="radio" name="options" id="option2"> 
+																		<i class="glyphicon glyphicon-edit"></i> Mod
+																	</button>
+																	<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-remove"></i> Del
+																	</button>
+																	<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-tags"></i> Info
+																	</button>
+																</div>
+																<br>
+																<hr>
+																<!--Active Feature Table-->
+																<table class="table table-bordered table-condensed table-hover" style="background-color: white">
+																	<caption style="text-align: left">
+																		<strong>Attributes</strong>
+																		<button data-toggle="tooltip" title="Cancel point" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-remove-sign"></i>
+																		</button>
+																		<button data-toggle="tooltip" title="Save point" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-circle-arrow-down"></i>
+																		</button>
+																		<button data-toggle="tooltip" title="Adjust geographic coordinates" class="btn btn-default btn-sm pull-right">
+																			<i class="glyphicon glyphicon-screenshot"></i>
+																		</button>
+																		<br> <br>
+																	</caption>
+																	<thead>
+																		<tr>
+																			<th>Field</th>
+																			<th>Details</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>FID</td>
+																			<td>12345</td>
+																		</tr>
+																		<tr>
+																			<td>Attrib 1</td>
+																			<td></td>
+																		</tr>
+																		<tr>
+																			<td>Attrib 2</td>
+																			<td></td>
+																		</tr>
+																	</tbody>
+																</table>
+															</form>
+														</div>
+														<div class="tab-pane" id="PGStyles">
+															<!--Polygon Styles -->
+															<form>
+																<div id="myCarouselPG" class="carousel slide">
+																	<ol class="carousel-indicators">
+																		<li data-target="#myCarouselPG" data-slide-to="0" class="active"></li>
+																		<li data-target="#myCarouselPG" data-slide-to="1"></li>
+																		<li data-target="#myCarouselPG" data-slide-to="2"></li>
+																		<li data-target="#myCarouselPG" data-slide-to="3"></li>
+																	</ol>
+																	<div class="carousel-inner">
+																		<div class="active item">
+																			<img src="png/PG-simple.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/PG-unique.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/PG-gradsym.png">
+																		</div>
+																		<div class="item">
+																			<img src="png/PG-choropleth.png">
+																		</div>
+																	</div>
+																	<a class="carousel-control left" href="#myCarouselPG" data-slide="prev"><span class="glyphicon glyphicon-chevron-prev"></span></a> <a
+																		class="carousel-control right" href="#myCarouselPG" data-slide="next"><span class="glyphicon glyphicon-chevron-next"></span></a>
+																</div>
+																<br> <label for="inputSymbol">Symbol</label> <br>
+																<div id="inputSymbol" class="btn-group">
+																	<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"> Select symbol <span class="caret"></span>
+																	</a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">circle</a></li>
+																		<li><a href="#">square</a></li>
+																		<li><a href="#">triangle</a></li>
+																	</ul>
+																</div>
+																<br> <br>
+																<!--Add column data type-->
+																<label for="inputSymbolSize">Size</label> <input id="inputSymbolSize" class="form-control" type="number" value="0"> <br>
+																<!--edit sld-->
+																<button class="btn btn-danger btn-block">
+																	<i class="glyphicon glyphicon-edit"></i> Edit SLD
+																</button>
+															</form>
+														</div>
+														<div class="tab-pane" id="PGDatabase">
+															<!--Polygon Database-->
+															<form>
+																<!--Edit Mode Buttons-->
+																<div class="col-md-12">
+																<button type="button" data-toggle="tooltip" title="Toggle Edit Mode ON" class="btn btn-primary btn-block">
+																	<i class="glyphicon glyphicon-play"></i> Edit Mode ON
+																</button>
+																</div>
+																<hr>
+																<div class="btn-group btn-block" data-toggle="buttons">
+																	<button data-toggle="tooltip" title="Add a new feature" class="btn btn-success col-md-3">
+																		<input type="radio" name="options" id="option1"> 
+																		<i class="glyphicon glyphicon-plus"></i> Add
+																	</button>
+  
+																	<button data-toggle="tooltip" title="Modify an existing feature's geometry/attribute" class="btn btn-info col-md-3">
+																		<input type="radio" name="options" id="option2"> 
+																		<i class="glyphicon glyphicon-edit"></i> Mod
+																	</button>
+																	<button data-toggle="tooltip" title="Delete a feature" class="btn btn-danger col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-remove"></i> Del
+																	</button>
+																	<button data-toggle="tooltip" title="Get feature information" class="btn btn-warning col-md-3">
+																		<input type="radio" name="options" id="option3">
+																		<i class="glyphicon glyphicon-tags"></i> Info
+																	</button>
+																</div>
+															</form>
+														</div>
+														<div class="tab-pane" id="PGInfobox">
+															<!--Polygon Infobox-->
+															<form>
+																<label>Select columns</label> <label class="checkbox"> <input type="checkbox" value=""> Column 1
+																</label> <label class="checkbox"> <input type="checkbox" value=""> Column 2
+																</label> <label class="checkbox"> <input type="checkbox" value=""> Column 3
+																</label>
+															</form>
+														</div>
+														<div class="tab-pane" id="PGMetadata">
+															<!--Polygon Metadata-->
+															<form>
+																<label class="control-label" for="inputLayerTitle">StoryLayer Title</label> <input class="form-control" type="text"
+																	id="inputLayerTitle" placeholder="Title"> <br> <label for="inputCategory">Category</label> <br>
+																<div id="inputCategory" class="btn-group">
+																	<a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#"> Select category <span class="caret"></span>
+																	</a>
+																	<ul class="dropdown-menu">
+																		<li><a href="#">Category 1</a></li>
+																		<li><a href="#">Category 2 </a></li>
+																		<li><a href="#">Category 3</a></li>
+																	</ul>
+																</div>
+																<br> <br> <label for="inputAbstract">Abstract</label>
+																<textarea class="form-control" id="inputAbstract" rows="5" placeholder="Summary"></textarea>
+																<!--parse button-->
+																<br>
+																<button class="btn btn-danger btn-block">
+																	<i class="glyphicon glyphicon-download"></i> Save metadata
+																</button>
+															</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--new Layer-->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											<h4 class="panel-title" style="color: #cc7a00">
+												<a class="accordion-toggle" data-toggle="collapse" data-parent="#LayersAccordion" href="#NewLayer">Add a new StoryLayer</a>
+											</h4>
+										</div>
+										<div id="NewLayer" class="panel-collapse collapse">
+											<div class="panel-body">
+												<div class="row">
+													<div class="col-md-4">
+														<ul class="nav nav-pills nav-stacked">
+															<li class="active"><a href="#NewSearch" data-toggle="tab">Search</a></li>
+															<li><a href="#NewCommon" data-toggle="tab">Common Data</a></li>
+															<li><a href="#NewCollection" data-toggle="tab">My Layers</a></li>
+															<li><a href="#NewUpload" data-toggle="tab">Upload</a></li>
+														</ul>
+													</div>
+													<div class="tab-content col-md-8">
+														<div class="tab-pane active" id="NewSearch">
+															<!--Search Layers-->
+															<form>Search</form>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+			</div>
+			
+			<div class="tab-pane" id="StoryBoardTab">
+					<!-- MyStoryBoard Pane-->
+							<div id="main_area">
+								<div class="row">
+									<!--Upper Storyboard-->
+									<div class="row col-md-12" id="slider">
+										<div class="col-md-8 col-md-offset-2" id="carousel-bounding-box">
+											<div id="myCarousel" class="carousel slide">
+												<div class="carousel-inner">
+													<div class="active item" data-slide-number="0">
+														<div class="form-horizontal well">
+															<fieldset>
+																<legend>
+																	StoryBox 1 <span class="btn-group pull-right">
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-cog"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-download-alt"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-trash"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-question-sign"></i>
+																		</button>
+																	</span>
+																</legend>
+																<div class="row">
+																	<div class="col-md-2">
+																		<ul class="nav nav-pills nav-stacked">
+																			<li class="active"><a href="#SB1Contents" data-toggle="tab">Contents</a></li>
+																			<li><a href="#SB1Bounds" data-toggle="tab">Bounds</a></li>
+																			<li><a href="#SB1Layers" data-toggle="tab">Layers</a></li>
+																			<li><a href="#SB1Layout" data-toggle="tab">Layout</a></li>
+																		</ul>
+																	</div>
+																	<div class="tab-content col-md-10">
+																		<div class="tab-pane active" id="SB1Contents">
+																			<div class="row">
+																				<div class="col-md-7">
+																					<img src="storyboxes/sb1.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																					<button class="btn btn-default">Update Thumbnail</button>
+																				</div>
+																				<div class="col-md-5">
+																					<form class="form">
+																						<fieldset>
+																							<label class="control-label">StoryBox Title</label> <input type="text" class="form-control" pattern="\w+ \w+.*" title="Title"
+																								required> <br> <label>Start Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>End Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>Subtitle</label>
+																							<div class="row">
+																								<div class="col-md-12">
+																									<input class="form-control" type="text" placeholder="Details">
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB1Bounds">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="well">
+																						<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<form class="form">
+																						<fieldset>
+																							<div class="row">
+																								<div class="col-md-6">
+																									<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label> <input
+																										type="text" class="form-control" title="Title" required> <label>Scale</label>
+																									<div class="input-group">
+																										<span class="input-group-addon">1:</span> <input class="col-md-12 form-control" id="prependedInput" type="text"
+																											placeholder="Scale">
+																									</div>
+																								</div>
+																								<div class="col-md-6">
+																									<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input
+																										type="text" class="form-control" title="Title" required>
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB1Layers">
+																			<button class="btn btn-primary">Edit my Layers</button>
+																			<button class="btn btn-default">Refresh list</button>
+																			<br> <br>
+																			<div class="well">
+																				<table class="table">
+																					<thead>
+																						<tr>
+																							<th></th>
+																							<th>Layer Name</th>
+																							<th>Geo</th>
+																							<th>Author</th>
+																							<th style="width: 36px;"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 1</td>
+																							<td><span class="label label-success">POINT</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 2</td>
+																							<td><span class="label label-info">LINE</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 3</td>
+																							<td><span class="label label-danger">POLYGON</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB1Layout">
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 1</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 2</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 3</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+													<div class="item" data-slide-number="1">
+														<div class="form-horizontal well">
+															<fieldset>
+																<legend>
+																	StoryBox 2 <span class="btn-group pull-right">
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-cog"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-download-alt"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-trash"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-question-sign"></i>
+																		</button>
+																	</span>
+																</legend>
+																<div class="row">
+																	<div class="col-md-2">
+																		<ul class="nav nav-pills nav-stacked">
+																			<li class="active"><a href="#SB2Contents" data-toggle="tab">Contents</a></li>
+																			<li><a href="#SB2Bounds" data-toggle="tab">Bounds</a></li>
+																			<li><a href="#SB2Layers" data-toggle="tab">Layers</a></li>
+																			<li><a href="#SB2Layout" data-toggle="tab">Layout</a></li>
+																		</ul>
+																	</div>
+																	<div class="tab-content col-md-10">
+																		<div class="tab-pane active" id="SB2Contents">
+																			<div class="row">
+																				<div class="col-md-7">
+																					<img src="storyboxes/sb2.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																					<button class="btn btn-default">Update Thumbnail</button>
+																				</div>
+																				<div class="col-md-5">
+																					<form class="form">
+																						<fieldset>
+																							<label>StoryBox Title</label> <input type="text" class="form-control" pattern="\w+ \w+.*" title="Title" required> <br>
+																							<label>Start Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>End Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>Subtitle</label>
+																							<div class="row">
+																								<div class="col-md-12">
+																									<input class="form-control" type="text" placeholder="Details">
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB2Bounds">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="well">
+																						<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<form class="form">
+																						<fieldset>
+																							<div class="row">
+																								<div class="col-md-6">
+																									<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label> <input
+																										type="text" class="form-control" title="Title" required> <label>Scale</label>
+																									<div class="input-group">
+																										<span class="input-group-addon">1:</span> <input class=" form-control col-md-12" id="prependedInput" type="text"
+																											placeholder="Scale">
+																									</div>
+																								</div>
+																								<div class="col-md-6">
+																									<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input
+																										type="text" class="form-control" title="Title" required>
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB2Layers">
+																			<button class="btn btn-primary">Edit my Layers</button>
+																			<button class="btn btn-default">Refresh list</button>
+																			<br> <br>
+																			<div class="well">
+																				<table class="table">
+																					<thead>
+																						<tr>
+																							<th></th>
+																							<th>Layer Name</th>
+																							<th>Geo</th>
+																							<th>Author</th>
+																							<th style="width: 36px;"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 1</td>
+																							<td><span class="label label-success">POINT</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 2</td>
+																							<td><span class="label label-info">LINE</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 3</td>
+																							<td><span class="label label-danger">POLYGON</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB2Layout">
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 1</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 2</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 3</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+													<div class="item" data-slide-number="2">
+														<div class="form-horizontal well">
+															<fieldset>
+																<legend>
+																	StoryBox 3 <span class="btn-group pull-right">
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-cog"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-download-alt"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-trash"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-question-sign"></i>
+																		</button>
+																	</span>
+																</legend>
+																<div class="row">
+																	<div class="col-md-2">
+																		<ul class="nav nav-pills nav-stacked">
+																			<li class="active"><a href="#SB3Contents" data-toggle="tab">Contents</a></li>
+																			<li><a href="#SB3Bounds" data-toggle="tab">Bounds</a></li>
+																			<li><a href="#SB3Layers" data-toggle="tab">Layers</a></li>
+																			<li><a href="#SB3Layout" data-toggle="tab">Layout</a></li>
+																		</ul>
+																	</div>
+																	<div class="tab-content col-md-10">
+																		<div class="tab-pane active" id="SB3Contents">
+																			<div class="row">
+																				<div class="col-md-7">
+																					<img src="storyboxes/sb3.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																					<button class="btn btn-default">Update Thumbnail</button>
+																				</div>
+																				<div class="col-md-5">
+																					<form class="form">
+																						<fieldset>
+																							<label>StoryBox Title</label> <input type="text" class="form-control" pattern="\w+ \w+.*" title="Title" required> <br>
+																							<label>Start Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>End Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>Subtitle</label>
+																							<div class="row">
+																								<div class="col-md-12">
+																									<input class="form-control" type="text" placeholder="Details">
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB3Bounds">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="well">
+																						<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<form class="form">
+																						<fieldset>
+																							<div class="row">
+																								<div class="col-md-6">
+																									<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label> <input
+																										type="text" class="form-control" title="Title" required> <label>Scale</label>
+																									<div class="input-group">
+																										<span class="input-group-addon">1:</span> <input class="form-control col-md-12" id="prependedInput" type="text"
+																											placeholder="Scale">
+																									</div>
+																								</div>
+																								<div class="col-md-6">
+																									<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input
+																										type="text" class="form-control" title="Title" required>
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB3Layers">
+																			<button class="btn btn-primary">Edit my Layers</button>
+																			<button class="btn btn-default">Refresh list</button>
+																			<br> <br>
+																			<div class="well">
+																				<table class="table">
+																					<thead>
+																						<tr>
+																							<th></th>
+																							<th>Layer Name</th>
+																							<th>Geo</th>
+																							<th>Author</th>
+																							<th style="width: 36px;"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 1</td>
+																							<td><span class="label label-success">POINT</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 2</td>
+																							<td><span class="label label-info">LINE</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 3</td>
+																							<td><span class="label label-important">POLYGON</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB3Layout">
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 1</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 2</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 3</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+													<div class="item" data-slide-number="3">
+														<div class="form-horizontal well">
+															<fieldset>
+																<legend>
+																	StoryBox 4 <span class="btn-group pull-right">
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-cog"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-download-alt"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-trash"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-question-sign"></i>
+																		</button>
+																	</span>
+																</legend>
+																<div class="row">
+																	<div class="col-md-2">
+																		<ul class="nav nav-pills nav-stacked">
+																			<li class="active"><a href="#SB4Contents" data-toggle="tab">Contents</a></li>
+																			<li><a href="#SB4Bounds" data-toggle="tab">Bounds</a></li>
+																			<li><a href="#SB4Layers" data-toggle="tab">Layers</a></li>
+																			<li><a href="#SB4Layout" data-toggle="tab">Layout</a></li>
+																		</ul>
+																	</div>
+																	<div class="tab-content col-md-10">
+																		<div class="tab-pane active" id="SB4Contents">
+																			<div class="row">
+																				<div class="col-md-7">
+																					<img src="storyboxes/sb4.png" class="img-rounded" style="heigth: 100%; width: 100%;" /> <br> <br>
+																					<button class="btn btn-default">Update Thumbnail</button>
+																				</div>
+																				<div class="col-md-5">
+																					<form class="form">
+																						<fieldset>
+																							<label>StoryBox Title</label> <input type="text" class="form-control" pattern="\w+ \w+.*" title="Title" required> <br>
+																							<label>Start Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>End Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>Subtitle</label>
+																							<div class="row">
+																								<div class="col-md-12">
+																									<input class="form-control" type="text" placeholder="Details">
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB4Bounds">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="well">
+																						<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<form class="form">
+																						<fieldset>
+																							<div class="row">
+																								<div class="col-md-6">
+																									<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label> <input
+																										type="text" class="form-control" title="Title" required> <label>Scale</label>
+																									<div class="input-group">
+																										<span class="input-group-addon">1:</span> <input class="form-control col-md-12" id="prependedInput" type="text"
+																											placeholder="Scale">
+																									</div>
+																								</div>
+																								<div class="col-md-6">
+																									<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input
+																										type="text" class="form-control" title="Title" required>
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB4Layers">
+																			<button class="btn btn-primary">Edit my Layers</button>
+																			<button class="btn btn-default">Refresh list</button>
+																			<br> <br>
+																			<div class="well">
+																				<table class="table">
+																					<thead>
+																						<tr>
+																							<th></th>
+																							<th>Layer Name</th>
+																							<th>Geo</th>
+																							<th>Author</th>
+																							<th style="width: 36px;"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 1</td>
+																							<td><span class="label label-success">POINT</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 2</td>
+																							<td><span class="label label-info">LINE</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 3</td>
+																							<td><span class="label label-danger">POLYGON</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB4Layout">
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout1.png" alt="ALT NAME" style="heigth: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 1</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout2.png" alt="ALT NAME" style="heigth: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 2</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout3.png" alt="ALT NAME" style="heigth: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 3</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+													<div class="item" data-slide-number="4">
+														<div class="form-horizontal well">
+															<fieldset>
+																<legend>
+																	StoryBox 5 <span class="btn-group pull-right">
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-cog"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-download-alt"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-trash"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-question-sign"></i>
+																		</button>
+																	</span>
+																</legend>
+																<div class="row">
+																	<div class="col-md-2">
+																		<ul class="nav nav-pills nav-stacked">
+																			<li class="active"><a href="#SB5Contents" data-toggle="tab">Contents</a></li>
+																			<li><a href="#SB5Bounds" data-toggle="tab">Bounds</a></li>
+																			<li><a href="#SB5Layers" data-toggle="tab">Layers</a></li>
+																			<li><a href="#SB5Layout" data-toggle="tab">Layout</a></li>
+																		</ul>
+																	</div>
+																	<div class="tab-content col-md-10">
+																		<div class="tab-pane active" id="SB5Contents">
+																			<div class="row">
+																				<div class="col-md-7">
+																					<img src="storyboxes/sb5.png" class="img-rounded" style="heigth: 100%; width: 100%;" /> <br> <br>
+																					<button class="btn btn-default">Update Thumbnail</button>
+																				</div>
+																				<div class="col-md-5">
+																					<form class="form">
+																						<fieldset>
+																							<label>StoryBox Title</label> <input type="text" class="form-control" pattern="\w+ \w+.*" title="Title" required> <br>
+																							<label>Start Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>End Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>Subtitle</label>
+																							<div class="row">
+																								<div class="col-md-12">
+																									<input class="form-control" type="text" placeholder="Details">
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB5Bounds">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="well">
+																						<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<form class="form">
+																						<fieldset>
+																							<div class="row">
+																								<div class="col-md-6">
+																									<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label> <input
+																										type="text" class="form-control" title="Title" required> <label>Scale</label>
+																									<div class="input-group">
+																										<span class="input-group-addon">1:</span> <input class="form-control col-md-12" id="prependedInput" type="text"
+																											placeholder="Scale">
+																									</div>
+																								</div>
+																								<div class="col-md-6">
+																									<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input
+																										type="text" class="form-control" title="Title" required>
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB5Layers">
+																			<button class="btn btn-primary">Edit my Layers</button>
+																			<button class="btn btn-default">Refresh list</button>
+																			<br> <br>
+																			<div class="well">
+																				<table class="table">
+																					<thead>
+																						<tr>
+																							<th></th>
+																							<th>Layer Name</th>
+																							<th>Geo</th>
+																							<th>Author</th>
+																							<th style="width: 36px;"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 1</td>
+																							<td><span class="label label-success">POINT</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 2</td>
+																							<td><span class="label label-info">LINE</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 3</td>
+																							<td><span class="label label-danger">POLYGON</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="SB5Layout">
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout1.png" alt="ALT NAME" style="heigth: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 1</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout2.png" alt="ALT NAME" style="heigth: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 2</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout3.png" alt="ALT NAME" style="heigth: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 3</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+													<div class="item" data-slide-number="5">
+														<div class="form-horizontal well">
+															<fieldset>
+																<legend>
+																	New StoryBox <span class="btn-group pull-right">
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-cog"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-download-alt"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-trash"></i>
+																		</button>
+																		<button class="btn btn-sm btn-info">
+																			<i class="glyphicon glyphicon-question-sign"></i>
+																		</button>
+																	</span>
+																</legend>
+																<div class="row">
+																	<div class="col-md-2">
+																		<ul class="nav nav-pills nav-stacked">
+																			<li class="active"><a href="#NSBContents" data-toggle="tab">Contents</a></li>
+																			<li><a href="#NSBBounds" data-toggle="tab">Bounds</a></li>
+																			<li><a href="#NSBLayers" data-toggle="tab">Layers</a></li>
+																			<li><a href="#NSBLayout" data-toggle="tab">Layout</a></li>
+																		</ul>
+																	</div>
+																	<div class="tab-content col-md-10">
+																		<div class="tab-pane active" id="NSBContents">
+																			<div class="row">
+																				<div class="col-md-7">
+																					<img src="storyboxes/newsb.png" class="img-rounded" style="height: 100%; width: 100%;" /> <br> <br>
+																					<button class="btn btn-default">Update Thumbnail</button>
+																				</div>
+																				<div class="col-md-5">
+																					<form class="form">
+																						<fieldset>
+																							<label>StoryBox Title</label> <input type="text" class="form-control" pattern="\w+ \w+.*" title="Title" required> <br>
+																							<label>Start Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>End Time</label>
+																							<div class="row">
+																								<div class="col-md-5">
+																									<select class="form-control">
+																										<option>Month</option>
+																										<option>...</option>
+																										<option>December</option>
+																									</select>
+																								</div>
+																								<div class="col-md-3">
+																									<select class="form-control">
+																										<option>DD</option>
+																										<option>...</option>
+																										<option>15</option>
+																									</select>
+																								</div>
+																								<div class="col-md-4">
+																									<select class="form-control">
+																										<option>YYYY</option>
+																										<option>...</option>
+																										<option>2015</option>
+																									</select>
+																								</div>
+																							</div>
+																							<br> <label>Subtitle</label>
+																							<div class="row">
+																								<div class="col-md-12">
+																									<input class="form-control" type="text" placeholder="Details">
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="NSBBounds">
+																			<div class="row">
+																				<div class="col-md-6">
+																					<div class="well">
+																						<iframe width="100%" height="200px" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&output=embed"></iframe>
+																					</div>
+																				</div>
+																				<div class="col-md-6">
+																					<form class="form">
+																						<fieldset>
+																							<div class="row">
+																								<div class="col-md-6">
+																									<label>XMIN</label> <input type="text" class="form-control" title="Title" required> <label>XMAX</label> <input
+																										type="text" class="form-control" title="Title" required> <label>Scale</label>
+																									<div class="input-group">
+																										<span class="input-group-addon">1:</span> <input class="form-control col-md-12" id="prependedInput" type="text"
+																											placeholder="Scale">
+																									</div>
+																								</div>
+																								<div class="col-md-6">
+																									<label>YMIN</label> <input type="text" class="form-control" title="Title" required> <label>YMAX</label> <input
+																										type="text" class="form-control" title="Title" required>
+																								</div>
+																							</div>
+																						</fieldset>
+																					</form>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="NSBLayers">
+																			<button class="btn btn-primary">Edit my Layers</button>
+																			<button class="btn btn-default">Refresh list</button>
+																			<br> <br>
+																			<div class="well">
+																				<table class="table">
+																					<thead>
+																						<tr>
+																							<th></th>
+																							<th>Layer Name</th>
+																							<th>Geo</th>
+																							<th>Author</th>
+																							<th style="width: 36px;"></th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 1</td>
+																							<td><span class="label label-success">POINT</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 2</td>
+																							<td><span class="label label-info">LINE</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																						<tr>
+																							<td><input type="checkbox" value=""></td>
+																							<td>StoryLayer 3</td>
+																							<td><span class="label label-danger">POLYGON</span></td>
+																							<td>@mapstoryteller</td>
+																							<td><a href="#"><i class="glyphicon glyphicon-pencil"></i></a> <a href="#myModal" data-toggle="modal"><i
+																									class="glyphicon glyphicon-remove"></i></a></td>
+																						</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																		<div class="tab-pane" id="NSBLayout">
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout1.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 1</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout2.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 2</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																			<div class="col-md-4">
+																				<div class="img-thumbnail">
+																					<img src="png/layout3.png" alt="ALT NAME" style="height: 100%; width: 100%;">
+																					<div class="caption">
+																						<h3>Layout 3</h3>
+																						<p>Description</p>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</fieldset>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Carousel nav -->
+										<a class="carousel-control left" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
+										<a class="carousel-control right" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+									</div>
+								</div>
+								<!--/Slider-->
+								<div class="row" id="slider-thumbs">
+									<!--Lower Storyboard-->
+									<div class="col-md-2">
+										<a id="carousel-selector-0" class="thumbnail"> <img src="storyboxes/sb1.png" />
+										</a>
+									</div>
+									<div class="col-md-2">
+										<a id="carousel-selector-1" class="thumbnail"> <img src="storyboxes/sb2.png" />
+										</a>
+									</div>
+									<div class="col-md-2">
+										<a id="carousel-selector-2" class="thumbnail"> <img src="storyboxes/sb3.png" />
+										</a>
+									</div>
+									<div class="col-md-2">
+										<a id="carousel-selector-3" class="thumbnail"> <img src="storyboxes/sb4.png" />
+										</a>
+									</div>
+									<div class="col-md-2">
+										<a id="carousel-selector-4" class="thumbnail"> <img src="storyboxes/sb5.png" />
+										</a>
+									</div>
+									<div class="col-md-2">
+										<a id="carousel-selector-5" class="thumbnail"> <img src="storyboxes/newsb.png" />
+										</a>
+									</div>
+								</div>
+							</div>
+							<script>
+                                jQuery(document).ready(function($) {
+
+                                    $('#myCarousel').carousel({
+                                        interval : 15000
+                                    });
+
+                                    $('#carousel-text').html($('#slide-content-0').html());
+
+                                    //Handles the carousel thumbnails
+                                    $('[id^=carousel-selector-]').click(function() {
+                                        var id_selector = $(this).attr("id");
+                                        var id = id_selector.substr(id_selector.length - 1);
+                                        var id = parseInt(id);
+                                        $('#myCarousel').carousel(id);
+                                    });
+
+                                    // When the carousel slides, auto update the text
+                                    $('#myCarousel').on('slid', function(e) {
+                                        var id = $('.item.active').data('slide-number');
+                                        $('#carousel-text').html($('#slide-content-' + id).html());
+                                    });
+
+                                });
+                            </script>
+						
+			</div>
+			<div class="tab-pane" id="Story">
+				<p>Howdy, I'm in Section 2.</p>
+			</div>
+		</div>
+	</div> <!-- / jquery [required] -->
+    <script src="assets/javascripts/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- / jquery mobile (for touch events) -->
+    <script src="assets/javascripts/jquery/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <!-- / jquery migrate (for compatibility with new jquery) [required] -->
+    <script src="assets/javascripts/jquery/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- / jquery ui -->
+    <script src="assets/javascripts/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- / jQuery UI Touch Punch -->
+    <script src="assets/javascripts/plugins/jquery_ui_touch_punch/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+    <!-- / bootstrap [required] -->
+    <script src="assets/javascripts/bootstrap/bootstrap.js" type="text/javascript"></script>
+    <!-- / modernizr -->
+    <script src="assets/javascripts/plugins/modernizr/modernizr.min.js" type="text/javascript"></script>
+    <!-- / retina -->
+    <script src="assets/javascripts/plugins/retina/retina.js" type="text/javascript"></script>
+    <!-- / theme file [required] -->
+    <script src="assets/javascripts/theme.js" type="text/javascript"></script>
+    <!-- / demo file [not required!] -->
+    <script src="assets/javascripts/demo.js" type="text/javascript"></script>
+    <!-- / START - page related files and scripts [optional] -->
+    
+    <!-- / END - page related files and scripts [optional] -->
+  </body>
+</html>
