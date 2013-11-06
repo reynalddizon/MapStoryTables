@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Attribute Table</title>
+    <title>History Table</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <meta content='text/html;charset=utf-8' http-equiv='content-type'>
     <meta content='Flat administration template for Twitter Bootstrap. Twitter Bootstrap 3 template with Ruby on Rails support.' name='description'>
@@ -1466,9 +1466,9 @@
 			
 			<div class='row'>
                 <div class='col-sm-12'>
-                  <div class='box bordered-box orange-border' style='margin-bottom:0;'>
-                    <div class='box-header orange-background'>
-                      <div class='title'>Attribute table</div>
+                  <div class='box bordered-box blue-border' style='margin-bottom:0;'>
+                    <div class='box-header blue-background'>
+                      <div class='title'>History table</div>
                       <div class='actions'>
                         <a class="btn box-collapse btn-xs btn-link" href="#"><i></i>
                         </a>
@@ -1482,14 +1482,22 @@
 								<div class="row">
 									<div class="col-sm-2">
 										<label>Columns:</label>
-										<div class='make-switch switch-large' data-off="warning" data-on="danger" data-off-label='All' data-on-label='Infobox'>
+										<div class='make-switch switch-large' data-off="primary" data-on="success" data-off-label='All' data-on-label='Infobox'>
 											<input type='checkbox'>
 										</div>
 									</div>
 									<div class="col-sm-2">
 										<label>Time setting:</label>
-										<div class='make-switch switch-large' data-off="warning" data-on="danger" data-off-label='Local' data-on-label='UTC'>
+										<div class='make-switch switch-large'  data-off="primary" data-on="success" data-off-label='Local' data-on-label='UTC'>
 											<input type='checkbox'>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<label> Filter by Type </label>
+										<div class="btn-group">
+										<button class="btn btn-lg btn-success has-tooltip" data-placement="top" title="" data-original-title="Show Adds"><i class="icon-plus"></i></i></button>
+										<button class="btn btn-lg btn-warning has-tooltip" data-placement="top" title="" data-original-title="Show Mods"><i class="icon-edit"></i></button>
+										<button class="btn btn-lg btn-danger has-tooltip" data-placement="top" title="" data-original-title="Show Dels"><i class="icon-trash"></i></button>
 										</div>
 									</div>
 									<div class="col-sm-2">
@@ -1510,9 +1518,10 @@
 											</span>
 										</div>
 									</div>
-									<div class="col-sm-4" style="vertical-align:middle">
-										<div class="btn-toolbar">
-										<button class="btn btn-lg has-tooltip" data-placement="top" title="" data-original-title="Clear All Filters"><i class="icon-filter"> <i class="icon-trash"></i></i></button>
+									
+									<div class="col-sm-2" style="vertical-align:middle">
+										<div class="btn-group">
+										<button class="btn btn-lg has-tooltip" data-placement="top" title="" data-original-title="Clear All Filters"><i class="icon-filter"></i></button>
 										<button class="btn btn-lg has-tooltip" data-placement="top" title="" data-original-title="Save All Changes"><i class="icon-save"></i></button>
 										<button class="btn btn-lg has-tooltip" data-placement="top" title="" data-original-title="Export as CSV"><i class="icon-share"></i></button>
 										</div>
@@ -1526,120 +1535,168 @@
                             <thead>
                               <tr>
                                 <th>
-                                  FID
+                                  Committer
                                 </th>
                                 <th>
-                                  Time
+                                  Commit Time
                                 </th>
                                 <th>
-                                  State/Province
+                                  Edit Type
                                 </th>
+								<th>
+								  FID
+								</th>
+                                <th>
+								  State
+								</th>
 								<th>
 								  Country
 								</th>
-                                <th>
+								<th>
 								  Geometry
 								</th>
                               </tr>
                             </thead>
                             <tbody>
                               <tr><!--Record 1-->
-                                <td><div contenteditable>00001</div></td>
+                                <td><div contenteditable>reynalddizon</div></td>
                                 <td><div contenteditable>2013-09-12T18:51:10</div></td>
+								<td>
+                                  <span class='label label-danger'>DEL</span>
+                                </td>
+								<td><div contenteditable>00001</div></td>
 								<td><div contenteditable>Maryland</div></td>
 								<td><div contenteditable>United States</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable>[Lat, Long]</span>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 2-->
-                                <td><div contenteditable>00002</div></td>
-                                <td><div contenteditable>2013-05-26T13:14:17</div></td>
-								<td><div contenteditable>Alberta</div></td>
-								<td><div contenteditable>Canada</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+                                <td><div contenteditable>ddufour</div></td>
+                                <td><div contenteditable>2013-08-12T18:23:10</div></td>
+								<td>
+                                  <span class='label label-danger'>DEL</span>
+                                </td>
+								<td><div contenteditable>00002</div></td>
+								<td><div contenteditable>Nevada</div></td>
+								<td><div contenteditable>United States</div></td>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 3-->
-                                <td><div contenteditable>00003</div></td>
-                                <td><div contenteditable>2013-01-11T03:52:10</div></td>
-								<td><div contenteditable>Chihuahua</div></td>
-								<td><div contenteditable>Mexico</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+                                <td><div contenteditable>jmarino</div></td>
+                                <td><div contenteditable>2013-09-14T18:51:12</div></td>
+								<td>
+                                  <span class='label label-success'>ADD</span>
+                                </td>
+								<td><div contenteditable>00003</div></td>
+								<td><div contenteditable>Oregon</div></td>
+								<td><div contenteditable>United States</div></td>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 4-->
-                                <td><div contenteditable>00004</div></td>
-                                <td><div contenteditable>2013-02-11T03:52:10</div></td>
-								<td><div contenteditable>Wisconsin</div></td>
+                                <td><div contenteditable>bemmons</div></td>
+                                <td><div contenteditable>2013-09-23T18:51:10</div></td>
+								<td>
+                                  <span class='label label-warning'>MOD</span>
+                                </td>
+								<td><div contenteditable>00004</div></td>
+								<td><div contenteditable>Alaska</div></td>
 								<td><div contenteditable>United States</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 5-->
-                                <td><div contenteditable>00005</div></td>
-                                <td><div contenteditable>2013-04-11T03:52:10</div></td>
-								<td><div contenteditable>Ontario</div></td>
+                                <td><div contenteditable>bemmons</div></td>
+                                <td><div contenteditable>2013-09-03T02:00:10</div></td>
+								<td>
+                                  <span class='label label-success'>ADD</span>
+                                </td>
+								<td><div contenteditable>00005</div></td>
+								<td><div contenteditable>British Columbia</div></td>
 								<td><div contenteditable>Canada</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 6-->
-                                <td><div contenteditable>00006</div></td>
-                                <td><div contenteditable>2013-03-13T03:52:10</div></td>
-								<td><div contenteditable>Quebec</div></td>
+                                <td><div contenteditable>semmerson</div></td>
+                                <td><div contenteditable>2013-08-23T18:51:02</div></td>
+								<td>
+                                  <span class='label label-warning'>MOD</span>
+                                </td>
+								<td><div contenteditable>00006</div></td>
+								<td><div contenteditable>Ontario</div></td>
 								<td><div contenteditable>Canada</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 7-->
-                                <td><div contenteditable>00007</div></td>
-                                <td><div contenteditable>2013-02-17T03:52:10</div></td>
-								<td><div contenteditable>Vermont</div></td>
-								<td><div contenteditable>United States</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+                                <td><div contenteditable>semerson</div></td>
+                                <td><div contenteditable>2013-08-23T18:05:02</div></td>
+								<td>
+                                  <span class='label label-danger'>DEL</span>
+                                </td>
+								<td><div contenteditable>00007</div></td>
+								<td><div contenteditable>Yukon</div></td>
+								<td><div contenteditable>Canada</div></td>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 8-->
-                                <td><div contenteditable>00008</div></td>
-                                <td><div contenteditable>2013-08-11T03:52:10</div></td>
-								<td><div contenteditable>California</div></td>
+                                <td><div contenteditable>semerson</div></td>
+                                <td><div contenteditable>2013-08-23T18:04:02</div></td>
+								<td>
+                                  <span class='label label-success'>ADD</span>
+                                </td>
+								<td><div contenteditable>00008</div></td>
+								<td><div contenteditable>Delaware</div></td>
 								<td><div contenteditable>United States</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 9-->
-                                <td><div contenteditable>00009</div></td>
-                                <td><div contenteditable>2013-11-11T03:52:10</div></td>
-								<td><div contenteditable>South Carolina</div></td>
+                                <td><div contenteditable>reynalddizon</div></td>
+                                <td><div contenteditable>2013-08-23T18:04:07</div></td>
+								<td>
+                                  <span class='label label-success'>ADD</span>
+                                </td>
+								<td><div contenteditable>00008</div></td>
+								<td><div contenteditable>Texas</div></td>
 								<td><div contenteditable>United States</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
 							  <tr><!--Record 10-->
-                                <td><div contenteditable>00010</div></td>
-                                <td><div contenteditable>2013-09-11T03:52:10</div></td>
-								<td><div contenteditable>Yucatan</div></td>
-								<td><div contenteditable>Mexico</div></td>
-                                <td>
-                                  <span class='label label-warning'>POINT</span><span contenteditable> [Lat, Long]</span>
+                                <td><div contenteditable>ddufour</div></td>
+                                <td><div contenteditable>2013-08-23T18:01:02</div></td>
+								<td>
+                                  <span class='label label-warning'>MOD</span>
+                                </td>
+								<td><div contenteditable>00010</div></td>
+								<td><div contenteditable>Ohio</div></td>
+								<td><div contenteditable>United States</div></td>
+								<td>
+                                  <span class='label label-info'>POLYGON</span> [coordinates]
                                 </td>
                               </tr>
-							  </tbody>
+							</tbody>
                             <tfoot>
                               <tr>
-                                <th>Filter: FID</th>
-                                <th>Filter: Time</th>
-								<th>Filter: State/Province</th>
-								<th>Filter: Country</th>
+                                <th>Filter: Committer</th>
+                                <th>Filter: Commit Time</th>
+								<th>Filter: Edit Type</th>
+								<th>Filter: FID</th>
+								<th>Filter: State</th>
+                                <th>Filter: Country</th>
                                 <th>Filter: Coordinates</th>
                               </tr>
                             </tfoot>
